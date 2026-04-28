@@ -1,0 +1,76 @@
+.contact{
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    gap: 20px;
+}
+.contact-colm{
+    flex-basis: 48%;
+    color: #676767;
+}
+.contact-colm h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #000f38;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-colm h3 img{
+    width: 35px;
+    margin-left: 10px;
+}
+.contact-colm p{
+    width: 450px;
+    line-height: 1.3;
+}
+.contact-colm ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 20px 0;
+}
+.contact-colm ul li img{
+    width: 25px;
+    margin-right: 10px;
+}
+.contact-colm form input, .contact-colm form textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ebecfe;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    resize: none;
+}
+.contact-colm span {
+    display: block;
+    margin: 20px 0;
+}
+
+
+/* media queries */
+
+@media(max-width:800px) {
+    .contact {
+        /* flex-direction: column; */
+        display: block;
+    }
+    .contact-colm {
+        padding: 20px;
+
+    }
+    .contact-colm ul li img {
+        width: 20px;
+    }
+}
+
+@media(max-width:600px) {
+    .contact-colm p{
+        width: 400px;
+        font-size: 12px;
+    }
+}
